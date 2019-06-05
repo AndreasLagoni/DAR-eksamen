@@ -26,6 +26,6 @@ function addMarker() {
       JSON.stringify(newMarker)
     );
   } else {
-    console.log("Udfyld alle felterne");
+    alert("Udfyld alle felterne")
   }
 }
