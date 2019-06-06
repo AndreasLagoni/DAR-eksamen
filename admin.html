@@ -57,9 +57,7 @@
           <div>
             <h1>Adminpanel</h1>
             <p>
-              Her har du mulighed for at tilføje nye fratrådte soldater. Der vil
-              være et "?" Icon til højre for alle inputs, som vil fortælle dig
-              hvad der skal stå i dem.
+              Her har du mulighed for at tilføje nye fratrådte soldater.
             </p>
           </div>
           <article class="adminWrapper">
@@ -87,16 +85,22 @@
               <span>Koordinater:<span style="color: red;">*</span></span>
               <input
                 type="text"
-                placeholder="Koordinator ex (55.620344, 8.243324)"
+                placeholder="Koordinator ex (55.620171, 8.243427)"
                 id="inputCoords"
                 class="adminInput"
-                value="55.620344, 8.243324"
+                value="55.620171, 8.243427"
               />
             </div>
             <div class="adminItemDiv">
               <button class="standardBtn white" onclick="addMarker()">
                 Tilføj
               </button>
+            </div>
+            <div id="backtoMapAdmin">
+              <p>Du har tilføjet den nye marker!</p>
+              <a href="index.html#beforeMap"
+                ><i class="fas fa-arrow-left"></i>Tilbage til kortet</a
+              >
             </div>
           </article>
         </div>

@@ -513,6 +513,9 @@ footer {
   background-color: #597e50;
   color: white;
 }
+.standardBtn:focus {
+  outline: none;
+}
 .footerRight {
   width: 33%;
   position: absolute;
@@ -551,6 +554,12 @@ footer {
   padding: 0.5em;
   min-width: 200px;
   width: 60%;
+}
+#backtoMapAdmin {
+  display: none;
+}
+#backtoMapAdmin a {
+  color: black;
 }
 /* SCALABLE media queries */
 @media screen and (max-width: 1700px) {

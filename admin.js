@@ -31,6 +31,8 @@ function addMarker() {
     nameInput.value = "";
     dateInput.value = "";
     coordsinput.value = "";
+    let backtoMap = document.getElementById("backtoMapAdmin");
+    backtoMap.style.display = "block";
   } else {
     alert("Udfyld alle felterne");
   }
