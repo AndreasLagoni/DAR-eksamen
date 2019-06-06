@@ -5,6 +5,9 @@ function openBurger() {
 }
 // Admin side
 function addMarker() {
+  let nameInput = document.getElementById("inputName");
+  let dateInput = document.getElementById("inputDate");
+  let coordsinput = document.getElementById("inputCoords");
   let name = document.getElementById("inputName").value;
   let date = document.getElementById("inputDate").value;
   let coords = document.getElementById("inputCoords").value;
@@ -25,7 +28,10 @@ function addMarker() {
       "Navn: " + JSON.stringify(newMarker[3]),
       JSON.stringify(newMarker)
     );
+    nameInput.value = "";
+    dateInput.value = "";
+    coordsinput.value = "";
   } else {
-    alert("Udfyld alle felterne")
+    alert("Udfyld alle felterne");
   }
 }
